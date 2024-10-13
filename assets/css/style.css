@@ -20,7 +20,7 @@ body {
 
 body:before {
     height: 40vh;
-    background: linear-gradient(#ffde06 0%, rgba(128, 128, 128, 0) 100%);
+    /** lfod **/
     opacity: 0.2;
     content: '';
     float: right;
