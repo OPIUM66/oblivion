@@ -6,7 +6,6 @@ import LandingDrawer from '../Landing/LandingDrawer';
 import XrayBody from './XrayBody';
 
 export default function Xray() {
-
     const {
         appLang,
         drawerIsOpen,
@@ -32,15 +31,13 @@ export default function Xray() {
         speeds,
         dataUsage
     } = useLanding();
-    console.log('dataUsage' , dataUsage);
-    console.log('ipData' , ipData);
-    console.log('ipInfo' , ipInfo);
-    console.log('isConnected' , isConnected);
-    
-    
+    console.log('dataUsage', dataUsage);
+    console.log('ipData', ipData);
+    console.log('ipInfo', ipInfo);
+    console.log('isConnected', isConnected);
+
     return (
         <>
-
             <LandingHeader
                 handleMenuOnKeyDown={handleMenuOnKeyDown}
                 hasNewUpdate={hasNewUpdate}
@@ -74,6 +71,5 @@ export default function Xray() {
                 dataUsage={dataUsage}
             />
         </>
-
     );
 }

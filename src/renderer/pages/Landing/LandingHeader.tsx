@@ -34,7 +34,7 @@ const LandingHeader: FC<LandingHeaderProps> = ({
                     <i className={classNames('material-icons', 'log')}>&#xe868;</i>
                 </Link>
                 <Link to={'/xray'} tabIndex={0}>
-                    <i className={classNames('material-icons', 'navLeft')} >🐱‍👤</i>
+                    <i className={classNames('material-icons', 'navLeft')}>🐱‍👤</i>
                 </Link>
             </div>
         </nav>

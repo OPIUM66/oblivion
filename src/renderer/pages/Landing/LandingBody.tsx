@@ -48,21 +48,23 @@ const LandingBody: FC<LandingBodyProps> = ({
     const generateRandomString = () => {
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
         let result = '';
-        
+
         for (let i = 0; i < 8; i++) {
             result += characters.charAt(Math.floor(Math.random() * characters.length));
             if (i === 3) result += ' '; // Add space after the fourth character
         }
-        
+
         return result;
-    }
-    
+    };
+
     return (
         <div className={classNames('myApp', 'verticalAlign')}>
             <div className='container'>
                 <div className='homeScreen'>
                     <div className='title'>
-                        <h1>OBLIVION <span style={{fontSize:14}}>{generateRandomString()}</span></h1>
+                        <h1>
+                            OBLIVION <span style={{ fontSize: 14 }}>{generateRandomString()}</span>
+                        </h1>
                         <h2>
                             {appLang?.home?.title_warp_based}{' '}
                             <span className='badge'>v{appVersion.replace('-beta', '')}</span>

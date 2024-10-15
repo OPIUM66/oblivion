@@ -23,22 +23,15 @@ interface XrayBodyProps {
     appVersion: string;
     speeds: SpeedStats;
     dataUsage: boolean;
-
 }
-
 
 const WelcomeMessage: FC<boolean> = (isConnected) => {
     if (isConnected) {
-        return (<>
-        is Connected
-    </>) 
+        return <>is Connected</>;
     } else {
-        return (<>
-        is not Connected
-    </>)
+        return <>is not Connected</>;
     }
-
-}
+};
 
 const XrayBody: FC<XrayBodyProps> = ({
     appLang,
@@ -59,7 +52,6 @@ const XrayBody: FC<XrayBodyProps> = ({
     speeds,
     dataUsage
 }) => {
-
     return (
         <div className={classNames('myApp', 'verticalAlign')}>
             <div className='container'>
