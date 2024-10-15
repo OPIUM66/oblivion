@@ -14,7 +14,7 @@ body {
 }
 
 [data-bs-theme='dark'] body {
-    background: #0a0e24;
+    background: #111;
     color: #dcdcdc;
 }
 
@@ -295,7 +295,11 @@ nav.header .navMenu .indicator {
     float: right;
     width: 227px;
 }
-
+.homeScreen .title h1 span {
+    position: absolute;
+    top: -15px;
+    left: 5px;
+}
 .homeScreen .title h1 {
     float: right;
     width: 100%;

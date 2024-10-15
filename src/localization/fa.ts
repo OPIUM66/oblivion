@@ -12,7 +12,7 @@ const persian: Language = {
         keep_trying: 'جهت تکرار تلاش، کمی صبر کنید ...'
     },
     home: {
-        title_warp_based: 'بر پایه وارپ',
+        title_warp_based: 'بر پایه آزادی',
         drawer_settings_warp: 'تنظیمات وارپ',
         drawer_settings_routing_rules: 'قوانین مسیریابی',
         drawer_settings_app: 'تنظیمات برنامه',

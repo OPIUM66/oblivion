@@ -116,6 +116,12 @@ const LandingDrawer: FC<LandingDrawerProps> = ({
                             <span>{appLang?.home?.drawer_log}</span>
                         </Link>
                     </li>
+                    <li role='presentation'>
+                        <Link to='/xray' role='menuitem'>
+                            <i className={'material-icons'}>&#xe88e;</i>
+                            <span>XRAY</span>
+                        </Link>
+                    </li>
                 </ul>
                 <div className='appVersion' role='note'>
                     v<b>{appVersion}</b>

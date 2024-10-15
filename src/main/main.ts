@@ -453,6 +453,13 @@ if (!gotTheLock) {
                     }
                 },
                 {
+                    label: 'XRAY',
+                    type: 'normal',
+                    click: () => {
+                        redirectTo('/xray');
+                    }
+                },
+                {
                     label: appLang.systemTray.log,
                     type: 'normal',
                     click: () => {

@@ -33,6 +33,9 @@ const LandingHeader: FC<LandingHeaderProps> = ({
                 <Link to={'/debug'} tabIndex={0}>
                     <i className={classNames('material-icons', 'log')}>&#xe868;</i>
                 </Link>
+                <Link to={'/xray'} tabIndex={0}>
+                    <i className={classNames('material-icons', 'navLeft')} >🐱‍👤</i>
+                </Link>
             </div>
         </nav>
     );
