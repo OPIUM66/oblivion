@@ -1,9 +1,10 @@
 import 'react-modern-drawer/dist/index.css';
-import XrayHeader from './XrayHeader';
 import useLanding from '../Landing/useLanding';
 import LandingHeader from '../Landing/LandingHeader';
 import LandingDrawer from '../Landing/LandingDrawer';
 import XrayBody from './XrayBody';
+import './Xray.css';
+
 
 export default function Xray() {
     const {

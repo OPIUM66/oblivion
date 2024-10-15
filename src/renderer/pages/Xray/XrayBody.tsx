@@ -1,8 +1,6 @@
 import classNames from 'classnames';
 import { FC, FormEvent } from 'react';
-import { Swipe } from 'react-swipe-component';
-import { cfFlag } from '../../lib/cfFlag';
-import { IpConfig, SpeedStats } from './useLanding';
+import { IpConfig, SpeedStats } from '../Landing/useLanding';
 import { Language } from '../../../localization/type';
 
 interface XrayBodyProps {
@@ -27,9 +25,25 @@ interface XrayBodyProps {
 
 const WelcomeMessage: FC<boolean> = (isConnected) => {
     if (isConnected) {
-        return <>is Connected</>;
+        return (
+            <div className='statusBar'>
+                <div className="box statusLabel">
+                <h4>Connected</h4>
+                <p>Iran</p>
+                </div>
+                <div className="box">10ms</div>
+            </div>
+        )
     } else {
-        return <>is not Connected</>;
+        return (
+            <div className='statusBar'>
+                <div className="box statusLabel">
+                <h4>Disconnected</h4>
+                <p>...</p>
+                </div>
+                <div className="box">...</div>
+            </div>
+        )
     }
 };
 
@@ -54,13 +68,11 @@ const XrayBody: FC<XrayBodyProps> = ({
 }) => {
     return (
         <div className={classNames('myApp', 'verticalAlign')}>
-            <div className='container'>
-                <div className='homeScreen'>
+                <div className='xrayScreen'>
                     <div className='title'>
                         <h1>XRAY</h1>
                     </div>
                     {WelcomeMessage(isConnected)}
-                </div>
             </div>
         </div>
     );
