@@ -8,19 +8,55 @@ body {
     background-color: rgb(255, 255, 255);
     flex-direction: row-reverse;
     min-height: 50px;
-    padding: 2px 10px;
+    padding: 5px 20px;
     border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+}
+/* Creative Green Status Bar */
+.statusBar.green {
+    background: linear-gradient(135deg, #28a745, #a8e063); /* Gradient effect */
+    box-shadow: 0 4px 15px rgba(0, 128, 0, 0.5); /* Soft green shadow */
+    border-radius: 10px; /* Smooth corners */
+    color: #fff; /* Text color */
+    font-family: 'Arial', sans-serif; /* Creative font */
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out; /* Animation on hover */
+}
+
+.statusBar.green:hover {
+    transform: translateY(-5px); /* Rotation and zoom effect on hover */
+}
+
+/* Creative Red Status Bar */
+.statusBar.red {
+    background: linear-gradient(135deg, #ff4e50, #f9d423); /* Red to yellow gradient */
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5); /* Soft red shadow */
+    border-radius: 10px; /* Smooth corners */
+    color: #fff; /* Text color */
+    font-family: 'Arial', sans-serif; /* Creative font */
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out; /* Animation on hover */
+}
+
+.statusBar.red:hover {
+    transform: translateY(-5px); /* Rotation and zoom effect on hover */
 }
 .statusBar .box {
     text-align: left;
     line-height: 5px;
     color: #111;
-    font-family: monospace;
 }
 .xrayScreen {
+    height: 100vh;
     float: right;
     width: 90%;
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;

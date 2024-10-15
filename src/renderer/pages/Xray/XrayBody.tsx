@@ -23,27 +23,36 @@ interface XrayBodyProps {
     dataUsage: boolean;
 }
 
-const WelcomeMessage: FC<boolean> = (isConnected) => {
+
+interface WelcomeMessageProps {
+    isConnected: boolean;
+    ipInfo: {
+        countryCode: string
+    };
+}
+
+
+const WelcomeMessage: FC<WelcomeMessageProps> = ({isConnected , ipInfo}) => {
     if (isConnected) {
         return (
-            <div className='statusBar'>
-                <div className="box statusLabel">
-                <h4>Connected</h4>
-                <p>Iran</p>
+            <div className='statusBar green'>
+                <div className='box statusLabel'>
+                    <h4>Connected</h4>
+                    <p>{ipInfo?.countryCode}</p>
                 </div>
-                <div className="box">10ms</div>
+                <div className='box'><i className="material-icons">check_circle</i></div>
             </div>
-        )
+        );
     } else {
         return (
-            <div className='statusBar'>
-                <div className="box statusLabel">
-                <h4>Disconnected</h4>
-                <p>...</p>
+            <div className='statusBar red'>
+                <div className='box statusLabel'>
+                    <h4>Disconnected</h4>
+                    <p> </p>
                 </div>
-                <div className="box">...</div>
+                <div className='box'><i className="material-icons">highlight_off</i></div>
             </div>
-        )
+        );
     }
 };
 
@@ -68,11 +77,12 @@ const XrayBody: FC<XrayBodyProps> = ({
 }) => {
     return (
         <div className={classNames('myApp', 'verticalAlign')}>
-                <div className='xrayScreen'>
-                    <div className='title'>
-                        <h1>XRAY</h1>
-                    </div>
-                    {WelcomeMessage(isConnected)}
+            <div className='xrayScreen'>
+                <div className='title'>
+                    <h1>XRAY</h1>
+                </div>
+                {WelcomeMessage({isConnected , ipInfo})}
+                
             </div>
         </div>
     );

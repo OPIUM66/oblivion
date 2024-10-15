@@ -5,7 +5,6 @@ import LandingDrawer from '../Landing/LandingDrawer';
 import XrayBody from './XrayBody';
 import './Xray.css';
 
-
 export default function Xray() {
     const {
         appLang,

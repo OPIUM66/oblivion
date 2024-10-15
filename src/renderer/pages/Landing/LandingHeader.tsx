@@ -28,10 +28,10 @@ const LandingHeader: FC<LandingHeaderProps> = ({
                     <div className={classNames('indicator', hasNewUpdate ? '' : 'hidden')} />
                 </div>
                 <Link to={'/'} tabIndex={0}>
-                <i className={classNames('material-icons', 'log')}>apps</i>
+                    <i className={classNames('material-icons', 'log')}>apps</i>
                 </Link>
                 <Link to={'/xray'} tabIndex={0}>
-                <i className={classNames('material-icons', 'log')}>dashboard</i>
+                    <i className={classNames('material-icons', 'log')}>dashboard</i>
                 </Link>
                 <Link to='/about' tabIndex={0}>
                     <i className={classNames('material-icons', 'log')}>&#xe88e;</i>
