@@ -1,4 +1,5 @@
-body {
+* {
+
 }
 .statusBar {
     display: flex;
@@ -12,14 +13,14 @@ body {
     border-radius: 5px;
     position: absolute;
     bottom: 20px;
+    
 }
 /* Creative Green Status Bar */
-.statusBar.green {
+.green {
     background: linear-gradient(135deg, #28a745, #a8e063); /* Gradient effect */
     box-shadow: 0 4px 15px rgba(0, 128, 0, 0.5); /* Soft green shadow */
     border-radius: 10px; /* Smooth corners */
     color: #fff; /* Text color */
-    font-family: 'Arial', sans-serif; /* Creative font */
     padding: 10px 20px;
     text-align: center;
     font-weight: bold;
@@ -27,17 +28,35 @@ body {
     transition: transform 0.3s ease-in-out; /* Animation on hover */
 }
 
-.statusBar.green:hover {
+.green:hover {
     transform: translateY(-5px); /* Rotation and zoom effect on hover */
 }
 
-/* Creative Red Status Bar */
-.statusBar.red {
+  
+
+.blue {
+    background-color: #2196f3;
+    background: linear-gradient(135deg, #2196f3, #157bce); /* Red to yellow gradient */
+    box-shadow: 0 4px 15px #2195f338; /* Soft red shadow */
+    border-radius: 10px; /* Smooth corners */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out; /* Animation on hover */
+
+  }
+  
+.blue:hover {
+    transform: translateY(-5px) ; /* Rotation and zoom effect on hover */
+}
+
+.red {
     background: linear-gradient(135deg, #ff4e50, #f9d423); /* Red to yellow gradient */
     box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5); /* Soft red shadow */
     border-radius: 10px; /* Smooth corners */
     color: #fff; /* Text color */
-    font-family: 'Arial', sans-serif; /* Creative font */
     padding: 10px 20px;
     text-align: center;
     font-weight: bold;
@@ -45,13 +64,16 @@ body {
     transition: transform 0.3s ease-in-out; /* Animation on hover */
 }
 
-.statusBar.red:hover {
+.red:hover {
     transform: translateY(-5px); /* Rotation and zoom effect on hover */
 }
 .statusBar .box {
     text-align: left;
     line-height: 5px;
     color: #111;
+    font-family: 'Noto Color Emoji', 'shabnam';
+
+    
 }
 .xrayScreen {
     height: 100vh;
@@ -66,3 +88,93 @@ body {
     user-select: none;
     position: relative;
 }
+
+
+.xrayList {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin: 70px;
+}
+
+.actionBtn {
+    line-height: 0;
+    border: 0;
+
+}
+.statusBar img {
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 2px;
+}
+
+.crud-list {
+    height: 100%;
+    width: 100%;
+    background-color: #2f2f2f;
+    padding: 10px;
+  }
+
+  .crud-input { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .crud-input input {
+    background-color: #212121 ;
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+
+  }
+  
+  .crud-input button {
+    background-color: #212121 ;
+    border-radius: 0;
+    font-size: 16px;
+    color: white;
+    padding: 10px 15px;
+
+  }
+  
+  .crud-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .crud-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+
+  .crud-flag {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .crud-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .actionBtn {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    background-color:#111;
+  }
